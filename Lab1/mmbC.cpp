@@ -6,7 +6,6 @@ using namespace std;
 using namespace std::chrono;
 
 
-// Multiplicación de matrices por bloques
 void multMatBloques(const vector<vector<int>>& A, const vector<vector<int>>& B, vector<vector<int>>& C, int n, int blockSize) {
     for (int i = 0; i < n; i += blockSize) {
         for (int j = 0; j < n; j += blockSize) {
@@ -25,14 +24,13 @@ void multMatBloques(const vector<vector<int>>& A, const vector<vector<int>>& B, 
 
 
 int main() {
-    int n = 10000 ; // Tamaño de la matriz
-    int blockSize = 64; // Tamaño del bloque
+    int n = 1000 ; 
+    int blockSize = 64;
 
     vector<vector<int>> A(n, vector<int>(n, 1));
     vector<vector<int>> B(n, vector<int>(n, 1));
     vector<vector<int>> C(n, vector<int>(n, 0));
 
-    // Evaluación de la multiplicación por bloques
     auto start = high_resolution_clock::now();
     multMatBloques(A, B, C, n, blockSize);
     auto stop = high_resolution_clock::now();
