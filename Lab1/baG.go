@@ -22,7 +22,7 @@ func loop2(A [][]int, x, y []int, n int) {
 }
 
 func main() {
-    n := 1000 // Reducido para evitar consumo excesivo de memoria
+    n := 10000 
 
     A := make([][]int, n)
     for i := range A {
