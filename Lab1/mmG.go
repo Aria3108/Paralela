@@ -20,8 +20,8 @@ func matrixMultiplication(A, B, C [][]int, n int) {
 
 
 func main() {
-	n := 512 // Tamaño de la matriz
-	blockSize := 64 // Tamaño del bloque
+	n := 512 
+	blockSize := 64 
 
 	// Inicializar matrices
 	A := make([][]int, n)
