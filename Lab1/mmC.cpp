@@ -18,13 +18,12 @@ void multMat(const vector<vector<int>>& A, const vector<vector<int>>& B, vector<
 
 
 int main() {
-    int n = 1000 ; // Tamaño de la matriz
+    int n = 1000;
 
     vector<vector<int>> A(n, vector<int>(n, 1));
     vector<vector<int>> B(n, vector<int>(n, 1));
     vector<vector<int>> C(n, vector<int>(n, 0));
 
-    // Evaluación de la multiplicación clásica
     auto start = high_resolution_clock::now();
     multMat(A, B, C, n);
     auto stop = high_resolution_clock::now();
