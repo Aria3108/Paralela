@@ -5,7 +5,6 @@
 using namespace std;
 using namespace std::chrono;
 
-// Dos bucles anidados FOR
 void loop1(const vector<vector<int>> &A,const vector<int> &x, vector<int> &y, int n){
 
     for(int i = 0; i < n; i++){
@@ -26,7 +25,7 @@ void loop2(const vector<vector<int>> &A,const vector<int> &x, vector<int> &y, in
 
 
 int main() {
-    int n = 10000 ; // Tamaño de la matriz
+    int n = 10000 ;
 
     vector<vector<int>> A(n, vector<int>(n, 1));
     vector<int> y(n,0);
