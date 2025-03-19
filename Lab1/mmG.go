@@ -6,7 +6,6 @@ import (
 )
 
 
-// Multiplicación de matrices clásica
 func matrixMultiplication(A, B, C [][]int, n int) {
 	for i := 0; i < n; i++ {
 		for j := 0; j < n; j++ {
@@ -18,12 +17,10 @@ func matrixMultiplication(A, B, C [][]int, n int) {
 	}
 }
 
-
 func main() {
-	n := 512 
+	n := 1000 
 	blockSize := 64 
 
-	// Inicializar matrices
 	A := make([][]int, n)
 	B := make([][]int, n)
 	C := make([][]int, n)
@@ -37,8 +34,6 @@ func main() {
 		}
 	}
 
-
-	// Evaluación de la multiplicación clásica
 	start := time.Now()
 	matrixMultiplication(A, B, C, n)
 	elapsed := time.Since(start)
