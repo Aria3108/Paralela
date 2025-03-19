@@ -5,7 +5,6 @@ import (
 	"time"
 )
 
-// Función auxiliar para obtener el mínimo entre dos enteros
 func min(a, b int) int {
 	if a < b {
 		return a
@@ -13,8 +12,6 @@ func min(a, b int) int {
 	return b
 }
 
-
-// Multiplicación de matrices por bloques
 func blockMatrixMultiplication(A, B, C [][]int, n, blockSize int) {
 	for i := 0; i < n; i += blockSize {
 		for j := 0; j < n; j += blockSize {
@@ -36,7 +33,6 @@ func main() {
 	n := 1000
 	blockSize := 64 
 
-	// Inicializar matrices
 	A := make([][]int, n)
 	B := make([][]int, n)
 	C := make([][]int, n)
